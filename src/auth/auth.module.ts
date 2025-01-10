@@ -10,7 +10,7 @@ import { JWT_SECRET } from './constants';
     UsersModule,
     JwtModule.register({
       secret: JWT_SECRET,
-      signOptions: { expiresIn: '60s' },
+      signOptions: { expiresIn: '24h' },
     }),
   ],
   controllers: [AuthController],
